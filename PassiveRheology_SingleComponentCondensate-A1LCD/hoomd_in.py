@@ -18,7 +18,7 @@ shortrun_nve = 1000000
 longrun_nve = 40000000 #0.4 microseconds
 
 ## Initialization
-system = hoomd.init.read_gsd('/scratch/user/dineshsd/10.ProbeRheology/2.ProbeInteract/3.A1LCD_Variants/2.SixProbes/1.WT/5.Eq/ForProd_WT.gsd')
+system = hoomd.init.read_gsd('initial_configuration.gsd')
 sys_snapshot = system.take_snapshot(all = True)
 lbox = sys_snapshot.box.Lx #Assuming the simulation box is cubic
 
