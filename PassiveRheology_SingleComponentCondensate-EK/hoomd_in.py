@@ -19,7 +19,7 @@ shortrun_nve = 1000000
 longrun_nve = 40000000 #0.4 microseconds
 
 ## Initialization
-system = hoomd.init.read_gsd('ForProd2_EKV15_N250.gsd')
+system = hoomd.init.read_gsd('initial_configuration.gsd')
 sys_snapshot = system.take_snapshot(all = True)
 lbox = sys_snapshot.box.Lx #Assuming the simulation box is cubic
 
